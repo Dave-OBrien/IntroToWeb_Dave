@@ -1,0 +1,69 @@
+<!doctype html>
+    <html>
+        <head>
+            <title>Contact Us</title>
+        </head>
+        <body>
+            <form action="#" method="POST">
+                <div style="margin-left:74px">
+                    <label id="firstNameLabel" for="firstName" >First Name:</label>
+                    <input id="firstName" name:"FirstName" type="text" />
+                </div>
+                <br>
+                <div style="margin-left:76px">
+                    <label id="lastNameLabel" for="lastName">Last Name:</label>
+                    <input id="lastName" name:"LastName" type="text" />
+                </div>
+                <br>
+                <div style="margin-left:107px">
+                    <label id="EmailLabel" for="Email">Email: </label>
+                    <input id="Email" name:"Email" type="text" />
+                </div>
+                
+                <div style="margin-left:44px">
+                    <p>Type of License:             
+                    <input type="radio" id="licenseChoice1"
+                    name="license" value="Business" checked="checked">
+                    <label for="contactChoice1">Business</label>
+              
+                    <input type="radio" id="licenseChoice2"
+                    name="license" value="Personal">
+                    <label for="contactChoice2">Personal</label>
+                    </p>              
+                </div>
+
+                <div style="margin-left:100px">
+                    <p>Reason:         
+                    <select class="selectmenu">
+                        <option selected disabled class="hideoption">Options</option>
+                        <option>Select a Reason</option>
+                        <option>Software Support</option>
+                        <option>Hardware Support</option>
+                        <option>Information Request</option>
+                    </select>
+                    </p>
+                </div>
+                <div>
+                    <style>
+                        label textarea{
+                            vertical-align: top;
+                            height:75px;
+                            width:165px
+                         }
+                    </style>                        
+                    <label>Additional Information: <textarea></textarea></label>
+                </div>              
+                <br>                 
+                <div style="margin-left:152px">
+                    <input type="checkbox" id="termsService" name="termsservice" value="termsservice">
+                    <label for="termsservice">I have read the terms of service.</label>
+                </div>
+                <br>
+                <div style="margin-left:210px">
+                    <input type="submit" id="SubmitButton" value="Send Request" />
+                </div>
+            </form>
+        </body>
+    </html>
+
+
