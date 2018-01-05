@@ -18,7 +18,85 @@
             <a href="restaurantsiteV1contact.html">Contact Us</a>
             <hr>
             <p>
-                
+                <body>
+                    <br>
+                    <form action="#" method="POST">
+                        <div style="margin-left:700px">
+                            <label id="NameLabel" for="name" >Name:</label>
+                            <input id="name" name:"Name" type="text" />
+                        </div>
+                        <br>
+                        <div style="margin-left:700px">
+                            <label id="EmailLabel" for="Email">Email: </label>
+                            <input id="Email" name:"Email" type="text" />
+                        </div>
+                        <br>
+                        <div style="margin-left:700px">
+                            <label id="PhoneLabel" for="Phone">Phone:</label>
+                            <input id="Phone" name:"Phone" type="text" />
+                        </div>
+
+                        <div style="margin-left:620px">
+                            <p>Reason for Inquiry:         
+                            <select class="selectmenu" width="300" style="width: 173px">
+                                <option>Catering</option>
+                                <option>Private Party</option>
+                                <option>Feedback</option>
+                                <option>Other</option>
+                            </select>
+                            </p>
+                        </div>
+                        <div>
+                            <style>
+                                label textarea{
+                                    vertical-align: top;
+                                    position: absolute;
+                                    right: 900;
+                                    height:75px;
+                                    width:175px
+                                    }
+                            </style>                        
+                            <label style="margin-left:593px">Additional Information: <textarea></textarea></label>
+                        </div> 
+                        <br> 
+                        <br> 
+                        <br> 
+                        <div style="margin-left:533px">
+                            <p>Have you been to the restaurant?             
+                            <input type="radio" id="Choice1"
+                            name="No" value="No" checked="checked">
+                            <label for="beenChoice1">No</label>
+                      
+                            <input type="radio" id="Choice2"
+                            name="Yes" value="Yes">
+                            <label for="beenChoice2">Yes</label>
+                            </p>              
+                        </div>
+                          
+                        
+                       
+                        <div class="contact-container" style="margin-left:585px">
+                            <label for="contactdays">Best days to contact you:</label>
+                            <input id="MondayCheckbox" class="contact-checkbox" type="checkbox"/>
+                            <label for="MondayCheckbox">M</label>
+                            <input id="TuesdayCheckbox" class="contact-checkbox" type="checkbox"/>
+                            <label for="MondayCheckbox">T</label>
+                            <input id="WednesdayCheckbox" class="contact-checkbox" type="checkbox"/>
+                            <label for="MondayCheckbox">W</label>
+                            <input id="ThursdayCheckbox" class="contact-checkbox" type="checkbox"/>
+                            <label for="MondayCheckbox">Th</label>
+                            <input id="FridayCheckbox" class="contact-checkbox" type="checkbox"/>
+                            <label for="MondayCheckbox">F</label>
+
+                         </div>
+
+                        <br>
+
+                        <div style="text-align: center;">
+                            <input type="submit" id="SubmitButton" value="Send Request" />
+                        </div>
+                    </form>
+                </body> 
             </p>
             <hr>
             <center><h3>100 Main Street, Boston, MA 01234</h3></center>
