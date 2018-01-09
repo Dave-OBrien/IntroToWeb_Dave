@@ -1,0 +1,37 @@
+header{
+    
+    font-size: 30px;
+    line-height: 30px;
+    color: #4cbb17;
+}
+
+footer  {
+    font-size: 20px;
+}
+
+
+body{
+    background-color: #006400;
+}
+
+a:link{
+    color: #44749d;
+}
+
+a:hover{
+    font-weight:bold;
+
+}
+
+a:active{
+    color: #999999;
+}
+
+
+body.home a.home, body.menu a.menu, body.contact a.contact {
+
+    text-decoration: none;
+    
+    }
+    
+    

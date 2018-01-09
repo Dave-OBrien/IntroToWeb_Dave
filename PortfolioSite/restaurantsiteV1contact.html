@@ -2,33 +2,39 @@
     <html>
         <head>
             <title>Contact Us</title>
+            <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
         </head>
-        <body>
+        <header>
+                <br>
                 <center><h1>O'Brien's Irish Pub</h1></center>
+        </header>
+        <body>
             <hr>
             &nbsp
             &nbsp
             &nbsp
-            <a href="restaurantsiteV1Home.html">Home</a>
+            <a href="restaurantsiteV1Home.html" class="home">Home</a>
             &nbsp
             &nbsp
-            <a href="restaurantsiteV1menu.html">Menu</a>
+            <a href="restaurantsiteV1menu.html" class="menu">Menu</a>
             &nbsp
             &nbsp
-            <a href="restaurantsiteV1contact.html">Contact Us</a>
+            <a href="restaurantsiteV1contact.html" class="contact">Contact Us</a>
             <hr>
             <p>
-                <body>
+                <body class="contact">
                     <br>
                     <form action="#" method="POST">
                         <div style="margin-left:700px">
-                            <label id="NameLabel" for="name" >Name:</label>
-                            <input id="name" name:"Name" type="text" />
+                            <b> <label id="NameLabel" for="name" >Name:</label>
+                                <input id="name" name:"Name" type="text" />
+                            </b>                          
                         </div>
                         <br>
                         <div style="margin-left:700px">
-                            <label id="EmailLabel" for="Email">Email: </label>
-                            <input id="Email" name:"Email" type="text" />
+                            <b><label id="EmailLabel" for="Email">Email: </label>
+                                <input id="Email" name:"Email" type="text" />
+                            </b>                            
                         </div>
                         <br>
                         <div style="margin-left:700px">
@@ -51,7 +57,7 @@
                                 label textarea{
                                     vertical-align: top;
                                     position: absolute;
-                                    right: 900;
+                                    right: 879;
                                     height:75px;
                                     width:175px
                                     }
@@ -98,14 +104,15 @@
                     </form>
                 </body> 
             </p>
-            <hr>
-            <center><h3>100 Main Street, Boston, MA 01234</h3></center>
-            <center><h4>617-123-4567</h4></center>
-
-            <hr>
-         
+          
 
        
         </body>
+        <hr>
+        <footer>
+            <center><h3>100 Main Street, Boston, MA 01234</h3></center>
+            <center><h4>617-123-4567</h4></center>
+        </footer>
+        <hr>
     </html>
 </doctype>
