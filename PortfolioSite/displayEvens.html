@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <script type="text/JavaScript" src="displayEvens.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+-->
+</head>
+<body>
+    <h1>Sample</h1>
+    <br>
+
+    <div style="margin-left:74px">
+        <label id="startNumberLabel" for="startingNumber">Starting Number</label>
+        <input id="startingNumber" name:"StartNumber" type="text" />
+    </div>
+
+    <br>
+
+    <div style="margin-left:80px">
+        <label id="endNumberLabel" for="endingNumber">Ending Number</label>
+        <input id="endingNumber" name:"EndNumber" type="text" />
+    </div>
+
+    <br>
+
+    <div style="margin-left:154px">
+        <label id="stepLabel" for="step">Step</label>
+        <input id="step" name:"step" type="text" />
+    </div>
+
+    <br>
+var start = document.getElementsByID('StartNumber').value;
+var end = document.getElementsByName('EndNumber').value;
+var steps = document.getElementsByName('step').value;
+    <div style="margin-left:210px">
+        <input type="button" name="Evens" onclick="listEvens(start,end,steps)" value="Send Request" />
+    </div>
+    <br>
+
+    <div id="evenResults" style="display:none"  >Here are the even numbers between
+        
+    </div>
+
+    
+</body>
+</html>
+
