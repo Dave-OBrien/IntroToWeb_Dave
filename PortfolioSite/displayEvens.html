@@ -14,6 +14,7 @@
 -->
 </head>
 <body>
+    <form name="formevens"> 
     <h1>Sample</h1>
     <br>
 
@@ -37,11 +38,9 @@
     </div>
 
     <br>
-var start = document.getElementsByID('StartNumber').value;
-var end = document.getElementsByName('EndNumber').value;
-var steps = document.getElementsByName('step').value;
+
     <div style="margin-left:210px">
-        <input type="button" name="Evens" onclick="listEvens(start,end,steps)" value="Send Request" />
+        <input type="button" name="Evens" onclick="listEvens()" value="Send Request" />
     </div>
     <br>
 
@@ -49,7 +48,7 @@ var steps = document.getElementsByName('step').value;
         
     </div>
 
-    
+    </form>
 </body>
 </html>
 
