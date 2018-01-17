@@ -20,10 +20,8 @@ a:link{
 }
 
 
-
 a:hover{
     font-weight:bold;
-
 }
 
 a:active{
@@ -31,25 +29,41 @@ a:active{
 }
 
 body.home a.home {
-
-    text-decoration: none;
- 
+    text-decoration: none; 
     }
 
-    body.menu a.menu {
+body.menu a.menu {
+    text-decoration: none;
+}
 
-        text-decoration: none;
-        
-        }
-
-        body.contact a.contact {
-
-            text-decoration: none;
-            
-            }
+body.contact a.contact {
+    text-decoration: none;
+}
 
 .Beverages tr:nth-child(odd){
     background-color: #d5d2cb;
 }
+
+.table {
+    margin: 0 auto;
+    width: 80%;
+}
+
+th {
+text-align: center;
+}
+
+table.borderless td,table.borderless th {
+    border: none !important;
+}
+
+table, td, th {
+    border-collapse: collapse;
+}
+
+
+
+
+
     
     
