@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type-"text/JavaScript" src="LuckySevens.js"></script>
+
+</head>
+<body>
+
+<center><h1>Lucky Sevens</h1></center>
+
+<br>
+<html>
+<head>
+    <title>Lucky Sevens</title>
+
+</head>  
+
+<script type="text/javascript"> 
+    function rollDice(startBet)
+{
+       
+    if(startBet<= 0.00) {
+        alert("Starting bet must be greater than $0");
+    }
+    else
+{
+    var runningTotal = startBet;
+    var startingBet = startBet;
+    var maxWon = startBet;
+    var totalRolls = 1;
+    var maxRollCount = 1;
+
+
+
+do {
+    var d1 = Math.ceil(Math.random() * (1 + 6 - 1));
+    var d2 = Math.ceil(Math.random() * (1 + 6 - 1));
+    var diceTotal = d1 + d2;
+    if (diceTotal == 7) {        
+        if (runningTotal >= maxWon){
+        maxWon = runningTotal;
+        maxRollCount = totalRolls;
+    }
+        runningTotal = +runningTotal + 4;
+        
+    } else {
+        if (runningTotal >= maxWon){
+        maxWon = runningTotal;
+        maxRollCount = totalRolls;
+    }
+        runningTotal = +runningTotal - 1;
+    }
+    totalRolls++;
+   
+    }
+    
+while (runningTotal > 0); 
+    
+    //alert(startBet);
+   // alert(diceTotal);
+
+    document.getElementById("startingBet").innerHTML = 'Starting Bet: $' + startingBet; 
+    document.getElementById("totalRolls").innerHTML = 'Total Rolls Before Going Broke:  ' + totalRolls; 
+    document.getElementById("maxWon").innerHTML = 'Highest Amount Won:  $' + maxWon;    
+    document.getElementById("maxRollCount").innerHTML = 'Roll Count Highest Amount Won:  ' + maxRollCount;
+    document.getElementById('btnPlay').style.display='none'; 
+
+    }
+}
+</script>
+
+<body>
+<form name="formDice">
+    <div style="margin-left:800px">
+        <label id="startBetLabel" for="startBet" >Starting Bet:</label>
+        <input id="startBet" name:"StartingBet" type="number" />
+    </div>
+    <br>
+    <br>
+    <center><input type="button" name="btnPlay" value="Play" onClick="rollDice(document.formDice.startBet.value)"></center>
+
+</form>
+
+<div><center>
+        <p id="startingBet"></p>
+        <p id="totalRolls"></p>
+        <p id="maxWon"></p>
+        <p id="maxRollCount"></p>
+</center></div>
+   
+        
+</body>
+
+
+
+
+</html>
