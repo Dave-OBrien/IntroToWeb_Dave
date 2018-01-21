@@ -64,9 +64,12 @@ while (runningTotal > 0);
     document.getElementById("totalRolls").innerHTML = 'Total Rolls Before Going Broke:  ' + totalRolls; 
     document.getElementById("maxWon").innerHTML = 'Highest Amount Won:  $' + maxWon;    
     document.getElementById("maxRollCount").innerHTML = 'Roll Count Highest Amount Won:  ' + maxRollCount;
-    document.getElementById('btnPlay').style.display='none'; 
+    document.getElementById("line").innerHTML = '________________________________';
+    document.getElementById("result").innerHTML = 'Results';
+ 
+    changeButton();
 
-    }
+}
 }
 </script>
 
@@ -78,17 +81,22 @@ while (runningTotal > 0);
     </div>
     <br>
     <br>
-    <center><input type="button" name="btnPlay" value="Play" onClick="rollDice(document.formDice.startBet.value)"></center>
+    <center><input type="button" id="btnPlay" name="btnPlay" value="Play" onClick="rollDice(document.formDice.startBet.value)"></center>
+
 
 </form>
 
-<div><center>
+<div id="results"><center>
+        <p id="line"></p>
+        <h1><p id="result"></p></h1>
         <p id="startingBet"></p>
         <p id="totalRolls"></p>
         <p id="maxWon"></p>
         <p id="maxRollCount"></p>
 </center></div>
-   
+
+
+
         
 </body>
 

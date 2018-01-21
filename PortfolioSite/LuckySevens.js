@@ -4,7 +4,7 @@ function isNumberKey(evt){
         return false;
     return true;
 }
-
+/*
 
 function rollDice(){
     var y=document.getElementById("startBet");
@@ -54,5 +54,31 @@ var dice = {
     if (elem.value=="Play") elem.value = "Play Again";
     else elem.value = "Play";
 }
-  
-  
+
+
+
+
+*/
+function changeButton()
+
+{
+    if (document.getElementById('btnPlay').value=="Play") 
+    {document.getElementById("btnPlay").value="Play Again";
+    //document.getElementById("btnPlay").onclick=test();
+    //location.reload();  
+}
+    else {document.getElementById("btnPlay").value="Play";
+    location.reload();}
+    //document.getElementById("btnPlay").onclick="rollDice(document.formDice.startBet.value)";
+    //test2;
+
+}
+
+function test()
+{
+    //alert("testing")
+}
+
+function test2(){
+    alert("2")
+}
