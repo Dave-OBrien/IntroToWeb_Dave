@@ -21,6 +21,7 @@ var startNum = document.formevens.startingNumber.value;
 var endNum = document.formevens.endingNumber.value;
 var steps = document.formevens.step.value;
 var evennumbers = document.formevens.evennumbers.value;
+var evenNumber = document.formevens.evennumber.value;
 var i = startNum;
 
 
@@ -50,18 +51,21 @@ if(isNaN(startNum)){
         {
             evennumbers = evennumbers + ',' + i;
         }
-        i++;
+        i = parseInt(i) + parseInt(steps);
     }
 
-
+    var evennumbers = evennumbers.replace(/(^,)|(,$)/g, "")
 
 
     document.getElementById("startNum").innerHTML = startNum; 
     document.getElementById("endNum").innerHTML = endNum;
-    document.getElementById("evennumbers").innerHTML = evennumbers.value; 
+    document.getElementById("evennumbers").innerHTML = evennumbers; 
     document.getElementById("steps").innerHTML = steps;
+    document.getElementById("evenNumber").innerHTML = evennumbers; 
   
     document.getElementById("evenResults").style.display = 'inline';
+    document.getElementById("evennumbers").style.display = 'inline';
+    document.getElementById("evenNumber").style.display = 'inline';
 
 }
 </script>
@@ -90,10 +94,15 @@ if(isNaN(startNum)){
         <input id="step" name:"step" type="number" />
     </div>
 
-    <div style="margin-left:154px">
+    <div style="display: none">
             <label id="evensLabel" for="evens">evennumbers</label>
             <input id="evennumbers" name:"evennumbers"  type="text" />
         </div>
+
+        <div style="display: none">
+                <label id="evensLabel" for="even">evennumber</label>
+                <input id="evennumber" name:"evennumber"  type="text" />
+            </div>
 
     <br>
 
@@ -103,11 +112,14 @@ if(isNaN(startNum)){
     <br>
 
     <div id="evenResults" style="display:none"  >Here are the even numbers between <b id="startNum"></b> and <b id="endNum"></b> by <b id = "steps"></b> 's:  
-     
-        
+  
+
     </div>
 
-    <div id="evenNumber" > test:<b id="evennumbers"></b>   
+    <br>
+    <br>
+
+    <div id="evenNumber" style="display:none">testing<b id="evenNumber"></b>   
      
         
     </div>
